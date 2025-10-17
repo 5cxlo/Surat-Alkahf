@@ -1,119 +1,109 @@
-/* 🌿 ألوان التصميم الزيتية */
 body {
-  background-color: #e9eee9;
-  font-family: "Scheherazade", "Amiri", serif;
-  margin: 0;
+  background-color: #f2f3f4;
   color: #1f2a2e;
-  line-height: 2.4;
-  text-align: justify;
+  font-family: "Amiri", serif;
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+  line-height: 2.2;
 }
 
-/* 🔝 الشريط العلوي */
+/* الشريط العلوي */
 .topbar {
-  background-color: #3b7f5a;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  border-bottom: 3px solid #2d6044;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e3e7e9;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.actions { margin-top: 8px; }
+
+/* الأزرار */
 .btn {
+  border: 1px solid #e3e7e9;
   background: #fff;
-  color: #2d6044;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 10px;
-  margin: 3px;
-  font-size: 15px;
+  color: #2e6247;
+  border-radius: 10px;
+  padding: 6px 12px;
   cursor: pointer;
   transition: 0.3s;
 }
-.btn:hover { background: #2d6044; color: #fff; }
 
-/* 🌙 الوضع الداكن */
-body.dark {
-  background-color: #121514;
-  color: #eee;
-}
-body.dark .topbar {
-  background-color: #1e3d2c;
-  border-bottom: 3px solid #0f2418;
-}
-body.dark .ayahs {
-  background-color: #1c1f1e;
-  color: #e7e7e7;
-}
-body.dark .num {
-  background-color: rgba(91,182,138,0.15);
-  border-color: rgba(91,182,138,0.35);
-  color: #5bb68a;
+.btn:hover {
+  background: #2e6247;
+  color: #fff;
 }
 
-/* 📖 الآيات */
+/* الحاوية الرئيسية */
 .container {
-  max-width: 900px;
+  background: #fff;
+  border: 1px solid #e3e7e9;
+  border-radius: 16px;
+  max-width: 860px;
   margin: 30px auto;
-  background-color: #f8f8f4;
-  border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 35px 30px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+/* البسملة */
 .bismillah {
   text-align: center;
-  font-size: 28px;
+  font-size: 30px;
+  color: #2e6247;
   margin-bottom: 25px;
-  color: #1a6334;
 }
 
+/* رقم الآية */
+.num {
+  display: inline-block;
+  background-color: #eaf2ed; /* دائرة ناعمة */
+  color: #2e6247;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 6px;
+}
+
+/* نص الآيات */
 .ayahs {
   font-size: 22px;
-  text-align: justify;
+  color: #1f2a2e;
   direction: rtl;
+  text-align: justify;
+  line-height: 2.4;
+  word-spacing: 3px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* كل آية تكون في نفس السطر مع التي بعدها */
+.ayah {
+  display: inline;
   white-space: pre-wrap;
 }
 
-.ayah {
-  display: inline;
-  border: none;
-  padding: 0 3px;
+/* الوضع الداكن */
+body.dark {
+  background-color: #0f1213;
+  color: #e8eeee;
 }
 
-.ayah + .ayah {
-  margin-left: 0.38em; /* مثل b5b5 */
+body.dark .container {
+  background-color: #151a1c;
 }
 
-/* 🔵 رقم الآية بدائرة ناعمة */
-.num {
-  display: inline-block;
-  font-size: 0.85em;
-  color: #1a6334;
-  background-color: rgba(59,127,90,0.10);
-  border: 1px solid rgba(59,127,90,0.25);
-  border-radius: 50%;
-  padding: 3px 7px;
-  margin: 0 5px;
-  font-weight: 600;
-}
-
-.note {
-  margin-top: 25px;
-  text-align: center;
-  color: #3b7f5a;
-  background: rgba(59,127,90,.06);
-  border: 1px solid rgba(59,127,90,.15);
-  border-radius: 10px;
-  padding: 12px;
-  font-size: 16px;
+body.dark .num {
+  background-color: #2e6247;
+  color: #fff;
 }
 
 footer {
   text-align: center;
+  color: #6e7b7f;
   padding: 15px;
-  color: #3b7f5a;
-}
-
-.palms path {
-  fill: #3b7f5a;
-  opacity: 0.4;
 }

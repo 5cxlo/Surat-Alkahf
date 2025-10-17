@@ -1,0 +1,119 @@
+/* 🌿 ألوان التصميم الزيتية */
+body {
+  background-color: #e9eee9;
+  font-family: "Scheherazade", "Amiri", serif;
+  margin: 0;
+  color: #1f2a2e;
+  line-height: 2.4;
+  text-align: justify;
+}
+
+/* 🔝 الشريط العلوي */
+.topbar {
+  background-color: #3b7f5a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #2d6044;
+}
+.actions { margin-top: 8px; }
+.btn {
+  background: #fff;
+  color: #2d6044;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover { background: #2d6044; color: #fff; }
+
+/* 🌙 الوضع الداكن */
+body.dark {
+  background-color: #121514;
+  color: #eee;
+}
+body.dark .topbar {
+  background-color: #1e3d2c;
+  border-bottom: 3px solid #0f2418;
+}
+body.dark .ayahs {
+  background-color: #1c1f1e;
+  color: #e7e7e7;
+}
+body.dark .num {
+  background-color: rgba(91,182,138,0.15);
+  border-color: rgba(91,182,138,0.35);
+  color: #5bb68a;
+}
+
+/* 📖 الآيات */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #f8f8f4;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 35px 30px;
+}
+
+.bismillah {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #1a6334;
+}
+
+.ayahs {
+  font-size: 22px;
+  text-align: justify;
+  direction: rtl;
+  white-space: pre-wrap;
+}
+
+.ayah {
+  display: inline;
+  border: none;
+  padding: 0 3px;
+}
+
+.ayah + .ayah {
+  margin-left: 0.38em; /* مثل b5b5 */
+}
+
+/* 🔵 رقم الآية بدائرة ناعمة */
+.num {
+  display: inline-block;
+  font-size: 0.85em;
+  color: #1a6334;
+  background-color: rgba(59,127,90,0.10);
+  border: 1px solid rgba(59,127,90,0.25);
+  border-radius: 50%;
+  padding: 3px 7px;
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+.note {
+  margin-top: 25px;
+  text-align: center;
+  color: #3b7f5a;
+  background: rgba(59,127,90,.06);
+  border: 1px solid rgba(59,127,90,.15);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #3b7f5a;
+}
+
+.palms path {
+  fill: #3b7f5a;
+  opacity: 0.4;
+}
